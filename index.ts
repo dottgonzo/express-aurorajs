@@ -20,7 +20,7 @@ export = class Aurora extends Aurorajs {
             res.send(data);
         });
         Router.get('/reconfigure', function(req, res) {
-            let data = _this.data();
+            let data = _this.reconfigure({addresses: req.body.addresses, timezone: req.body.tz});
             res.send(data);
         });
 
