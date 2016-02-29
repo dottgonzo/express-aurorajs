@@ -9,7 +9,6 @@ interface IAddress {
 export = class Aurora extends Aurorajs {
     constructor(sensors: IAddress[], tz: string,exe?:string) {
         super(sensors, tz,exe);
-
     }
 
     Router() {
@@ -23,7 +22,6 @@ export = class Aurora extends Aurorajs {
             let data = _this.reconfigure({addresses: req.body.addresses, timezone: req.body.tz, exec: req.body.exec});
             res.send(data);
         });
-
 
         return Router;
 
