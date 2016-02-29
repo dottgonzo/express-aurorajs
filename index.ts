@@ -7,8 +7,8 @@ interface IAddress {
     address: number;
 }
 export = class Aurora extends Aurorajs {
-    constructor(sensors: IAddress[], tz: string) {
-        super(sensors, tz);
+    constructor(sensors: IAddress[], tz: string,exe?:string) {
+        super(sensors, tz,exe);
 
     }
 
@@ -20,7 +20,7 @@ export = class Aurora extends Aurorajs {
             res.send(data);
         });
         Router.get('/reconfigure', function(req, res) {
-            let data = _this.reconfigure({addresses: req.body.addresses, timezone: req.body.tz});
+            let data = _this.reconfigure({addresses: req.body.addresses, timezone: req.body.tz, exec: req.body.exec});
             res.send(data);
         });
 
