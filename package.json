@@ -1,6 +1,6 @@
 {
   "name": "express-aurorajs",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -32,7 +32,7 @@
     "mocha": "^2.4.5"
   },
   "dependencies": {
-    "aurorajs": "^0.1.46",
+    "aurorajs": "^0.1.47",
     "express": "^4.13.4"
   }
 }
