@@ -32,7 +32,7 @@
     "mocha": "^2.4.5"
   },
   "dependencies": {
-    "aurorajs": "^0.1.45",
+    "aurorajs": "^0.1.46",
     "express": "^4.13.4"
   }
 }
