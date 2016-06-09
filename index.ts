@@ -23,6 +23,16 @@ export = class Aurora extends Aurorajs {
 
             });
         });
+
+        Router.get("/alarms", function(req, res) {
+            _this.alarms().then(function(d) {
+                res.send(d);
+            }).catch(function(err) {
+                res.send(err);
+
+            });
+        });
+
         Router.get("/reconfigure", function(req, res) {
             let data = _this.reconfigure({ addresses: req.body.addresses, timezone: req.body.tz, exec: req.body.exec });
             res.send(data);
